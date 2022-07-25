@@ -131,6 +131,6 @@ dmypy.json
 # Project specific
 /config.py
 /.idea/
+/venv/
 *.db
-*.log
 /logs/*.log.*
