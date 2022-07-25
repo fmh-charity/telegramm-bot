@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 # Project specific
+config.py
 /config.py
 /.idea/
 /venv/
