@@ -1,1 +1,187 @@
 Логгер не умеет создавать папку, поэтому необходимо иметь её в каком-либо виде.
+[2022-07-25 16:41:43,431] postgre_db:76    [INFO] ----db init is started----
+[2022-07-25 16:41:43,431] postgre_db:78    [INFO] ----db init is ended----
+[2022-07-25 16:41:43,447] __main__:21    [INFO] Запуск миграций
+[2022-07-25 16:41:43,668] __main__:27    [INFO] Миграции завершены
+[2022-07-25 16:41:43,669] __main__:33    [INFO] Запуск приложения.
+[2022-07-25 16:41:43,671] h_bot:22    [INFO] Установлен список команд BotCommandScopeDefault()
+[2022-07-25 16:41:43,998] aiogram.dispatcher:420    [INFO] Start poling
+[2022-07-25 16:41:44,048] aiogram.dispatcher:425    [INFO] Run polling for bot @iHospice_dev_test_bot id=5470519631 - 'Ай-Teko тест бот'
+[2022-07-25 17:22:03,966] aiogram.event:149    [INFO] Update id=352774942 is handled. Duration 187 ms by bot id=5470519631
+[2022-07-25 17:28:35,621] aiogram.dispatcher:195    [ERROR] Failed to fetch updates - TelegramNetworkError: ServerDisconnectedError: Server disconnected
+[2022-07-25 17:28:35,623] aiogram.dispatcher:197    [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 5470519631)
+[2022-07-26 00:38:52,118] aiogram.dispatcher:440    [INFO] Polling stopped
+[2022-07-26 13:22:36,396] postgre_db:76    [INFO] ----db init is started----
+[2022-07-26 13:22:36,397] postgre_db:78    [INFO] ----db init is ended----
+[2022-07-26 13:22:36,428] __main__:21    [INFO] Запуск миграций
+[2022-07-26 13:22:36,630] __main__:27    [INFO] Миграции завершены
+[2022-07-26 13:22:36,631] __main__:33    [INFO] Запуск приложения.
+[2022-07-26 13:22:36,636] h_bot:22    [INFO] Установлен список команд BotCommandScopeDefault()
+[2022-07-26 13:22:37,343] aiogram.dispatcher:420    [INFO] Start poling
+[2022-07-26 13:22:37,413] aiogram.dispatcher:425    [INFO] Run polling for bot @iHospice_dev_test_bot id=5470519631 - 'Ай-Teko тест бот'
+[2022-07-26 15:56:01,367] aiogram.dispatcher:195    [ERROR] Failed to fetch updates - TelegramNetworkError: ServerDisconnectedError: Server disconnected
+[2022-07-26 15:56:01,370] aiogram.dispatcher:197    [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 5470519631)
+[2022-07-26 16:46:57,838] aiogram.dispatcher:195    [ERROR] Failed to fetch updates - TelegramNetworkError: ServerDisconnectedError: Server disconnected
+[2022-07-26 16:46:57,839] aiogram.dispatcher:197    [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 5470519631)
+[2022-07-26 17:45:43,974] aiogram.event:149    [INFO] Update id=352774943 is handled. Duration 250 ms by bot id=5470519631
+[2022-07-26 17:46:47,234] aiogram.event:149    [INFO] Update id=352774944 is handled. Duration 202 ms by bot id=5470519631
+[2022-07-26 17:49:13,857] aiogram.event:149    [INFO] Update id=352774945 is handled. Duration 217 ms by bot id=5470519631
+[2022-07-26 17:54:09,089] aiogram.event:149    [INFO] Update id=352774946 is handled. Duration 234 ms by bot id=5470519631
+[2022-07-26 17:56:50,497] aiogram.event:149    [INFO] Update id=352774947 is handled. Duration 219 ms by bot id=5470519631
+[2022-07-26 17:57:03,866] aiogram.event:149    [INFO] Update id=352774948 is handled. Duration 94 ms by bot id=5470519631
+[2022-07-26 17:57:07,758] aiogram.event:149    [INFO] Update id=352774949 is handled. Duration 94 ms by bot id=5470519631
+[2022-07-26 17:57:11,466] aiogram.event:149    [INFO] Update id=352774950 is handled. Duration 77 ms by bot id=5470519631
+[2022-07-26 17:57:28,490] aiogram.event:149    [INFO] Update id=352774951 is handled. Duration 172 ms by bot id=5470519631
+[2022-07-26 17:57:31,559] aiogram.event:149    [INFO] Update id=352774952 is handled. Duration 77 ms by bot id=5470519631
+[2022-07-26 17:57:36,169] aiogram.event:149    [INFO] Update id=352774953 is handled. Duration 155 ms by bot id=5470519631
+[2022-07-26 17:57:56,632] aiogram.event:149    [INFO] Update id=352774954 is handled. Duration 204 ms by bot id=5470519631
+[2022-07-26 17:58:05,655] aiogram.event:149    [INFO] Update id=352774955 is handled. Duration 94 ms by bot id=5470519631
+[2022-07-26 17:58:11,775] aiogram.event:149    [INFO] Update id=352774956 is handled. Duration 94 ms by bot id=5470519631
+[2022-07-26 17:58:19,768] aiogram.event:149    [INFO] Update id=352774957 is handled. Duration 109 ms by bot id=5470519631
+[2022-07-26 17:58:23,439] aiogram.event:149    [INFO] Update id=352774958 is handled. Duration 109 ms by bot id=5470519631
+[2022-07-26 17:58:37,845] aiogram.event:149    [INFO] Update id=352774959 is handled. Duration 92 ms by bot id=5470519631
+[2022-07-26 18:30:32,718] aiogram.event:149    [INFO] Update id=352774960 is handled. Duration 187 ms by bot id=5470519631
+[2022-07-26 18:31:14,984] aiogram.event:149    [INFO] Update id=352774961 is handled. Duration 172 ms by bot id=5470519631
+[2022-07-26 18:33:01,043] aiogram.event:149    [INFO] Update id=352774962 is handled. Duration 187 ms by bot id=5470519631
+[2022-07-26 18:33:07,204] aiogram.event:149    [INFO] Update id=352774963 is handled. Duration 140 ms by bot id=5470519631
+[2022-07-26 18:34:02,208] aiogram.event:149    [INFO] Update id=352774964 is handled. Duration 282 ms by bot id=5470519631
+[2022-07-26 18:34:27,386] aiogram.event:149    [INFO] Update id=352774965 is handled. Duration 204 ms by bot id=5470519631
+[2022-07-26 18:34:49,215] aiogram.event:149    [INFO] Update id=352774966 is handled. Duration 218 ms by bot id=5470519631
+[2022-07-26 18:35:00,319] aiogram.event:149    [INFO] Update id=352774967 is handled. Duration 187 ms by bot id=5470519631
+[2022-07-26 19:24:20,497] aiogram.event:149    [INFO] Update id=352774968 is handled. Duration 234 ms by bot id=5470519631
+[2022-07-26 19:24:25,395] aiogram.event:149    [INFO] Update id=352774969 is handled. Duration 125 ms by bot id=5470519631
+[2022-07-26 22:23:22,180] aiogram.dispatcher:440    [INFO] Polling stopped
+[2022-07-27 12:29:31,436] postgre_db:76    [INFO] ----db init is started----
+[2022-07-27 12:29:31,437] postgre_db:78    [INFO] ----db init is ended----
+[2022-07-27 12:29:31,479] __main__:21    [INFO] Запуск миграций
+[2022-07-27 12:29:31,677] __main__:27    [INFO] Миграции завершены
+[2022-07-27 12:29:31,677] __main__:33    [INFO] Запуск приложения.
+[2022-07-27 12:29:31,679] h_bot:22    [INFO] Установлен список команд BotCommandScopeDefault()
+[2022-07-27 12:29:32,016] aiogram.dispatcher:420    [INFO] Start poling
+[2022-07-27 12:29:32,064] aiogram.dispatcher:425    [INFO] Run polling for bot @iHospice_dev_test_bot id=5470519631 - 'Ай-Teko тест бот'
+[2022-07-27 13:06:20,887] aiogram.event:149    [INFO] Update id=352774970 is handled. Duration 281 ms by bot id=5470519631
+[2022-07-27 13:06:30,116] aiogram.event:149    [INFO] Update id=352774971 is handled. Duration 155 ms by bot id=5470519631
+[2022-07-27 13:06:33,322] aiogram.event:149    [INFO] Update id=352774972 is handled. Duration 93 ms by bot id=5470519631
+[2022-07-27 13:07:33,891] aiogram.event:149    [INFO] Update id=352774973 is handled. Duration 218 ms by bot id=5470519631
+[2022-07-27 13:07:37,152] aiogram.event:149    [INFO] Update id=352774974 is handled. Duration 186 ms by bot id=5470519631
+[2022-07-27 13:07:39,587] aiogram.event:149    [INFO] Update id=352774975 is handled. Duration 219 ms by bot id=5470519631
+[2022-07-27 13:19:23,912] aiogram.event:149    [INFO] Update id=352774976 is handled. Duration 235 ms by bot id=5470519631
+[2022-07-27 13:19:31,420] aiogram.event:149    [INFO] Update id=352774977 is handled. Duration 156 ms by bot id=5470519631
+[2022-07-27 13:19:38,808] aiogram.event:149    [INFO] Update id=352774978 is handled. Duration 78 ms by bot id=5470519631
+[2022-07-27 13:20:27,768] aiogram.event:149    [INFO] Update id=352774979 is handled. Duration 186 ms by bot id=5470519631
+[2022-07-27 13:21:43,740] aiogram.event:149    [INFO] Update id=352774980 is handled. Duration 218 ms by bot id=5470519631
+[2022-07-27 13:44:34,779] aiogram.event:149    [INFO] Update id=352774981 is handled. Duration 186 ms by bot id=5470519631
+[2022-07-27 13:44:43,048] aiogram.event:149    [INFO] Update id=352774982 is handled. Duration 78 ms by bot id=5470519631
+[2022-07-27 13:44:53,202] aiogram.event:149    [INFO] Update id=352774983 is handled. Duration 108 ms by bot id=5470519631
+[2022-07-27 13:45:10,380] aiogram.event:149    [INFO] Update id=352774984 is handled. Duration 188 ms by bot id=5470519631
+[2022-07-27 13:45:17,869] aiogram.event:149    [INFO] Update id=352774985 is handled. Duration 202 ms by bot id=5470519631
+[2022-07-28 00:52:17,565] aiogram.dispatcher:440    [INFO] Polling stopped
+[2022-08-11 14:40:25,408] postgre_db:76    [INFO] ----db init is started----
+[2022-08-11 14:40:25,409] postgre_db:78    [INFO] ----db init is ended----
+[2022-08-11 14:40:25,435] __main__:21    [INFO] Запуск миграций
+[2022-08-11 14:40:25,900] yoyo.migrations:504    [INFO] Applying 20220710_01_initial_create_tables
+[2022-08-11 14:40:25,987] yoyo.migrations:405    [INFO]  - applying step 0
+[2022-08-11 14:40:26,034] yoyo.migrations:405    [INFO]  - applying step 1
+[2022-08-11 14:40:26,055] yoyo.migrations:405    [INFO]  - applying step 2
+[2022-08-11 14:40:26,066] yoyo.migrations:405    [INFO]  - applying step 3
+[2022-08-11 14:40:26,110] yoyo.migrations:405    [INFO]  - applying step 4
+[2022-08-11 14:40:26,121] yoyo.migrations:405    [INFO]  - applying step 5
+[2022-08-11 14:40:26,132] yoyo.migrations:405    [INFO]  - applying step 6
+[2022-08-11 14:40:26,173] yoyo.migrations:405    [INFO]  - applying step 7
+[2022-08-11 14:40:26,191] yoyo.migrations:405    [INFO]  - applying step 8
+[2022-08-11 14:40:26,219] yoyo.migrations:405    [INFO]  - applying step 9
+[2022-08-11 14:40:26,233] yoyo.migrations:405    [INFO]  - applying step 10
+[2022-08-11 14:40:26,243] yoyo.migrations:405    [INFO]  - applying step 11
+[2022-08-11 14:40:26,253] yoyo.migrations:405    [INFO]  - applying step 12
+[2022-08-11 14:40:26,265] yoyo.migrations:405    [INFO]  - applying step 13
+[2022-08-11 14:40:26,289] yoyo.migrations:405    [INFO]  - applying step 14
+[2022-08-11 14:40:26,303] yoyo.migrations:405    [INFO]  - applying step 15
+[2022-08-11 14:40:26,318] yoyo.migrations:405    [INFO]  - applying step 16
+[2022-08-11 14:40:26,328] yoyo.migrations:405    [INFO]  - applying step 17
+[2022-08-11 14:40:26,339] yoyo.migrations:405    [INFO]  - applying step 18
+[2022-08-11 14:40:26,397] yoyo.migrations:534    [INFO] Marking 20220710_01_initial_create_tables applied
+[2022-08-11 14:40:26,410] yoyo.migrations:504    [INFO] Applying 20220715_01_insert_initial_data
+[2022-08-11 14:40:26,482] yoyo.migrations:405    [INFO]  - applying step 0
+[2022-08-11 14:40:26,497] yoyo.migrations:405    [INFO]  - applying step 1
+[2022-08-11 14:40:26,507] yoyo.migrations:405    [INFO]  - applying step 2
+[2022-08-11 14:40:26,521] yoyo.migrations:405    [INFO]  - applying step 3
+[2022-08-11 14:40:26,531] yoyo.migrations:405    [INFO]  - applying step 4
+[2022-08-11 14:40:26,542] yoyo.migrations:405    [INFO]  - applying step 5
+[2022-08-11 14:40:26,554] yoyo.migrations:405    [INFO]  - applying step 6
+[2022-08-11 14:40:26,564] yoyo.migrations:405    [INFO]  - applying step 7
+[2022-08-11 14:40:26,574] yoyo.migrations:405    [INFO]  - applying step 8
+[2022-08-11 14:40:26,585] yoyo.migrations:405    [INFO]  - applying step 9
+[2022-08-11 14:40:26,595] yoyo.migrations:405    [INFO]  - applying step 10
+[2022-08-11 14:40:26,605] yoyo.migrations:405    [INFO]  - applying step 11
+[2022-08-11 14:40:26,616] yoyo.migrations:405    [INFO]  - applying step 12
+[2022-08-11 14:40:26,625] yoyo.migrations:405    [INFO]  - applying step 13
+[2022-08-11 14:40:26,637] yoyo.migrations:405    [INFO]  - applying step 14
+[2022-08-11 14:40:26,647] yoyo.migrations:405    [INFO]  - applying step 15
+[2022-08-11 14:40:26,657] yoyo.migrations:405    [INFO]  - applying step 16
+[2022-08-11 14:40:26,667] yoyo.migrations:405    [INFO]  - applying step 17
+[2022-08-11 14:40:26,677] yoyo.migrations:405    [INFO]  - applying step 18
+[2022-08-11 14:40:26,687] yoyo.migrations:405    [INFO]  - applying step 19
+[2022-08-11 14:40:26,697] yoyo.migrations:405    [INFO]  - applying step 20
+[2022-08-11 14:40:26,707] yoyo.migrations:405    [INFO]  - applying step 21
+[2022-08-11 14:40:26,716] yoyo.migrations:405    [INFO]  - applying step 22
+[2022-08-11 14:40:26,726] yoyo.migrations:405    [INFO]  - applying step 23
+[2022-08-11 14:40:26,736] yoyo.migrations:405    [INFO]  - applying step 24
+[2022-08-11 14:40:26,746] yoyo.migrations:405    [INFO]  - applying step 25
+[2022-08-11 14:40:26,756] yoyo.migrations:405    [INFO]  - applying step 26
+[2022-08-11 14:40:26,766] yoyo.migrations:405    [INFO]  - applying step 27
+[2022-08-11 14:40:26,776] yoyo.migrations:405    [INFO]  - applying step 28
+[2022-08-11 14:40:26,787] yoyo.migrations:405    [INFO]  - applying step 29
+[2022-08-11 14:40:26,797] yoyo.migrations:405    [INFO]  - applying step 30
+[2022-08-11 14:40:26,807] yoyo.migrations:405    [INFO]  - applying step 31
+[2022-08-11 14:40:26,818] yoyo.migrations:405    [INFO]  - applying step 32
+[2022-08-11 14:40:26,829] yoyo.migrations:405    [INFO]  - applying step 33
+[2022-08-11 14:40:26,839] yoyo.migrations:405    [INFO]  - applying step 34
+[2022-08-11 14:40:26,848] yoyo.migrations:405    [INFO]  - applying step 35
+[2022-08-11 14:40:26,858] yoyo.migrations:405    [INFO]  - applying step 36
+[2022-08-11 14:40:26,869] yoyo.migrations:405    [INFO]  - applying step 37
+[2022-08-11 14:40:26,878] yoyo.migrations:405    [INFO]  - applying step 38
+[2022-08-11 14:40:26,888] yoyo.migrations:405    [INFO]  - applying step 39
+[2022-08-11 14:40:26,906] yoyo.migrations:405    [INFO]  - applying step 40
+[2022-08-11 14:40:26,916] yoyo.migrations:405    [INFO]  - applying step 41
+[2022-08-11 14:40:26,926] yoyo.migrations:405    [INFO]  - applying step 42
+[2022-08-11 14:40:26,973] yoyo.migrations:534    [INFO] Marking 20220715_01_insert_initial_data applied
+[2022-08-11 14:40:26,986] yoyo.migrations:504    [INFO] Applying 20220722_01_insert_data
+[2022-08-11 14:40:27,051] yoyo.migrations:405    [INFO]  - applying step 0
+[2022-08-11 14:40:27,076] yoyo.migrations:405    [INFO]  - applying step 1
+[2022-08-11 14:40:27,092] yoyo.migrations:405    [INFO]  - applying step 2
+[2022-08-11 14:40:27,126] yoyo.migrations:534    [INFO] Marking 20220722_01_insert_data applied
+[2022-08-11 14:40:27,159] __main__:27    [INFO] Миграции завершены
+[2022-08-11 14:40:27,160] __main__:33    [INFO] Запуск приложения.
+[2022-08-11 14:40:27,161] h_bot:22    [INFO] Установлен список команд BotCommandScopeDefault()
+[2022-08-11 14:40:27,440] aiogram.dispatcher:420    [INFO] Start poling
+[2022-08-11 14:40:27,493] aiogram.dispatcher:425    [INFO] Run polling for bot @iHospice_dev_test_bot id=5470519631 - 'Ай-Teko тест бот'
+[2022-08-11 14:47:27,588] aiogram.event:149    [INFO] Update id=352774986 is handled. Duration 343 ms by bot id=5470519631
+[2022-08-11 14:47:30,107] aiogram.event:149    [INFO] Update id=352774987 is handled. Duration 93 ms by bot id=5470519631
+[2022-08-11 14:47:38,260] aiogram.event:149    [INFO] Update id=352774988 is handled. Duration 125 ms by bot id=5470519631
+[2022-08-11 14:47:44,752] aiogram.event:149    [INFO] Update id=352774989 is handled. Duration 281 ms by bot id=5470519631
+[2022-08-11 14:47:55,416] aiogram.event:149    [INFO] Update id=352774990 is handled. Duration 171 ms by bot id=5470519631
+[2022-08-11 14:47:57,482] aiogram.event:149    [INFO] Update id=352774991 is handled. Duration 93 ms by bot id=5470519631
+[2022-08-11 14:47:59,110] aiogram.event:149    [INFO] Update id=352774992 is handled. Duration 62 ms by bot id=5470519631
+[2022-08-11 14:48:03,596] aiogram.event:149    [INFO] Update id=352774993 is handled. Duration 93 ms by bot id=5470519631
+[2022-08-11 14:49:26,362] aiogram.event:149    [INFO] Update id=352774994 is handled. Duration 218 ms by bot id=5470519631
+[2022-08-11 14:49:30,577] aiogram.event:149    [INFO] Update id=352774995 is handled. Duration 77 ms by bot id=5470519631
+[2022-08-11 14:49:36,570] aiogram.event:149    [INFO] Update id=352774996 is handled. Duration 93 ms by bot id=5470519631
+[2022-08-11 14:50:27,399] aiogram.event:149    [INFO] Update id=352774997 is handled. Duration 187 ms by bot id=5470519631
+[2022-08-11 14:52:52,409] aiogram.dispatcher:440    [INFO] Polling stopped
+[2022-08-11 14:52:55,911] postgre_db:76    [INFO] ----db init is started----
+[2022-08-11 14:52:55,911] postgre_db:78    [INFO] ----db init is ended----
+[2022-08-11 14:52:55,947] __main__:21    [INFO] Запуск миграций
+[2022-08-11 14:52:56,180] __main__:27    [INFO] Миграции завершены
+[2022-08-11 14:52:56,181] __main__:33    [INFO] Запуск приложения.
+[2022-08-11 14:52:56,183] h_bot:22    [INFO] Установлен список команд BotCommandScopeDefault()
+[2022-08-11 14:52:56,373] aiogram.dispatcher:420    [INFO] Start poling
+[2022-08-11 14:52:56,420] aiogram.dispatcher:425    [INFO] Run polling for bot @iHospice_dev_test_bot id=5470519631 - 'Ай-Teko тест бот'
+[2022-08-11 14:53:02,668] aiogram.event:149    [INFO] Update id=352774998 is handled. Duration 235 ms by bot id=5470519631
+[2022-08-11 14:53:06,474] aiogram.event:149    [INFO] Update id=352774999 is handled. Duration 77 ms by bot id=5470519631
+[2022-08-11 14:53:12,123] aiogram.event:149    [INFO] Update id=352775000 is handled. Duration 125 ms by bot id=5470519631
+[2022-08-11 14:53:13,979] aiogram.event:149    [INFO] Update id=352775001 is handled. Duration 108 ms by bot id=5470519631
+[2022-08-11 14:53:28,886] aiogram.event:149    [INFO] Update id=352775002 is handled. Duration 156 ms by bot id=5470519631
+[2022-08-11 14:53:30,881] aiogram.event:149    [INFO] Update id=352775003 is handled. Duration 78 ms by bot id=5470519631
+[2022-08-11 14:53:34,534] aiogram.event:149    [INFO] Update id=352775004 is handled. Duration 218 ms by bot id=5470519631
+[2022-08-11 14:53:37,521] aiogram.event:149    [INFO] Update id=352775005 is handled. Duration 109 ms by bot id=5470519631
+[2022-08-11 14:56:23,089] aiogram.dispatcher:440    [INFO] Polling stopped

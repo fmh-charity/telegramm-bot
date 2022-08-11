@@ -24,7 +24,7 @@ def get_start_buttons():
     design_button = types.KeyboardButton(text='🧑‍🎨 Дизайн')
     analytics_button = types.KeyboardButton(text='📈 Аналитика')
     # chat_button = types.KeyboardButton(text='📟 Общий чат')
-    owner_button = types.KeyboardButton(text='📟 Владелец продукта')
+    owner_button = types.KeyboardButton(text='📟 Тестирование')
     line1.append(design_button)
     line1.append(analytics_button)
     line1.append(owner_button)
@@ -137,18 +137,8 @@ async def analytics_page_handler(message: types.Message):
     link_keys = ['analytics_knowledge_base', 'analytics_request_access', 'chat_analytics', 'trello_analytics_link',
                  'prod_map_miro_link']
     for key in link_keys:
-        # id, url_key, url, "label"
-        link_fdb: DictRow = db.ui_links_get_by_key(key)
-        target_text = link_fdb.get('label')
-        target_link = link_fdb.get('url')
-        button = types.InlineKeyboardButton(text=target_text, url=target_link)
+        button = get_inline_button_by_type(key)
         builder.row(button)
-    # analytics_button = types.InlineKeyboardButton(text='✅ Аналитика',
-    #                                               callback_data=CallbackPage(action='analytics').pack())
-    # builder.add(analytics_button)
-    # map_button = types.InlineKeyboardButton(text='🗺 Карта продукта',
-    #                                         callback_data=CallbackPage(action='prod_map').pack())
-    # builder.add(map_button)
     await message.answer(text, reply_markup=builder.as_markup())
 
 
@@ -165,10 +155,10 @@ async def prod_map_page_callback(call: types.CallbackQuery):
     await product_map_page_handler(call.message)
 
 
-@router.message(F.chat.type == 'private', F.text == '📟 Владелец продукта')
+@router.message(F.chat.type == 'private', F.text == '📟 Тестирование')
 async def product_owner_page_handler(message: types.Message):
-    text = 'Владелец продукта:\n'
-    text += 'Что-то о владельце продукта'
+    text = '📟 Тестирование:\n\n'
+    text += 'TBA'
     await message.answer(text, reply_markup=get_start_buttons())
 
 
@@ -245,7 +235,12 @@ async def about_opensource_handler(message: types.Message):
 async def about_tech_component_handler(message: types.Message):
     text = '''🛠 Техническая составляющая
 
-В нашей уникальной децентрализованной команде - специалисты разных направлений
+Наше приложение кроссплатформенное, предусмотрена веб и мобильная версия. 
+Веб-версия создана на React, мобильное приложение (Android) - на Kotlin. 
+Все проекты размещены в открытом доступе на Github.
+Для работы backend мы используем стек: spring boot, java 11, hibernate, postgresql, docker. 
+Сервисы разворачиваются на сервере через docker compose с использованием CI/CD на Github, 
+а каждый pull request обязательно тестируется.
 '''
     await message.answer(text)
 
@@ -298,7 +293,8 @@ async def github_page_handler(message: types.Message):
     gi_button = types.InlineKeyboardButton(text=link_gi.get('label'), url=link_gi.get('url'))
     builder.row(mi_button, gi_button)
     link_ga: DictRow = db.ui_links_get_by_key('github_android_link')
-    ma_button = types.InlineKeyboardButton(text='📱 android разработка', callback_data=CallbackPage(action='android').pack())
+    ma_button = types.InlineKeyboardButton(text='📱 android разработка',
+                                           callback_data=CallbackPage(action='android').pack())
     ga_button = types.InlineKeyboardButton(text=link_ga.get('label'), url=link_ga.get('url'))
     builder.row(ma_button, ga_button)
     mm_button = types.InlineKeyboardButton(text='🏚 На главную', callback_data=CallbackPage(action='main').pack())
@@ -329,8 +325,7 @@ async def web_dev_page_callback(call: types.CallbackQuery):
 @router.message(F.chat.type == 'private', F.text == '🌐 Web')
 async def web_dev_page_handler(message: types.Message):
     text = '🌐 Web\n\n'
-    text += 'Тут можно получить информацию и запросить доступы'
-    text += 'к фронтэнд разработкам'
+    text += 'Подробную информацию можно найти по ссылкам'
     builder = InlineKeyboardBuilder()
     # id, url_key, url, "label"
     link_f: DictRow = db.ui_links_get_by_key('figma_web_link')
@@ -369,34 +364,35 @@ async def backend_page_callback(call: types.CallbackQuery):
 @router.message(F.chat.type == 'private', F.text == '🔙🔚 Backend')
 async def backend_page_handler(message: types.Message):
     text = '🔙🔚 Backend\n\n'
-    text += 'Тут можно получить информацию и запросить доступы'
-    text += 'к backend разработке'
-    builder = InlineKeyboardBuilder()
+    text += 'Подробную информацию можно найти по ссылкам'
     # id, url_key, url, "label"
     builder = InlineKeyboardBuilder()
     builder.adjust(1)
     link_keys = ['figma_backend_link', 'trello_backend_link', 'chat_backend', 'github_backend_link',
                  'backend_knowledge_base_link', 'prod_map_miro_link', 'backend_access_link',
-                 'swagger_link', 'test_web_app_link', 'app_prod_link']
+                 'swagger_link', 'test_web_app_link', 'app_prod_link', 'get_test_cred']
     for key in link_keys:
-        # id, url_key, url, "label"
-        link_fdb: DictRow = db.ui_links_get_by_key(key)
-        target_text = link_fdb.get('label')
-        target_link = link_fdb.get('url')
-        button = types.InlineKeyboardButton(text=target_text, url=target_link)
+        button = get_inline_button_by_type(key)
         builder.row(button)
-    cred_fdb: DictRow = db.ui_links_get_by_key('test_app_credentials_request')
-    button_cred = types.InlineKeyboardButton(text=cred_fdb.get('label'),
-                                             callback_data=CallbackPage(action='get_test_cred').pack())
-    builder.row(button_cred)
     await message.answer(text, reply_markup=builder.as_markup())
 
 
 @router.callback_query(CallbackPage.filter(F.action == 'get_test_cred'))
-async def ios_page_callback(call: types.CallbackQuery):
-    cred_fdb: DictRow = db.ui_links_get_by_key('test_app_credentials_request')
-    cred = cred_fdb.get('url')
-    await call.answer(cred, show_alert=True)
+async def test_cred_page_callback(call: types.CallbackQuery):
+    creds_fdb: list = db.ui_form_get_values_by_key('test_app_credentials_request')
+    text: str = ''
+    for cred_fdb in creds_fdb:  # type: DictRow
+        text += cred_fdb.get('value')
+    await call.answer(text, show_alert=True)
+
+
+@router.callback_query(CallbackPage.filter(F.action == 'get_test_flight_app'))
+async def test_flight_app_page_callback(call: types.CallbackQuery):
+    test_flights_fdb: list = db.ui_form_get_values_by_key('get_test_flight_app')
+    text: str = ''
+    for test_flight_fdb in test_flights_fdb:  # type: DictRow
+        text += test_flight_fdb.get('value')
+    await call.answer(text, show_alert=True)
     # await ios_dev_page_handler(call.message)
 
 
@@ -409,23 +405,34 @@ async def ios_page_callback(call: types.CallbackQuery):
 @router.message(F.chat.type == 'private', F.text == '📱 ios разработка')
 async def ios_dev_page_handler(message: types.Message):
     text = '📱 ios разработка\n\n'
-    text += 'Тут можно получить информацию и запросить доступы'
-    text += 'к ios разработкам'
+    text += 'Подробную информацию можно найти по ссылкам'
 
     builder = InlineKeyboardBuilder()
     builder.adjust(1)
     link_keys = ['figma_ios_link', 'trello_ios_link', 'chat_ios', 'github_ios_link',
-                 'ios_knowledge_base_link', 'prod_map_miro_link', 'ios_access_link',
-                 'swagger_link', 'ios_knowledge_base_link', 'ios_knowledge_base_link']
+                 'prod_map_miro_link', 'ios_access_link',
+                 'swagger_link', 'ios_knowledge_base_link', 'ios_TestFlight_link']
     for key in link_keys:
-        # id, url_key, url, "label"
-        link_fdb: DictRow = db.ui_links_get_by_key(key)
-        target_text = link_fdb.get('label')
-        target_link = link_fdb.get('url')
-        button = types.InlineKeyboardButton(text=target_text, url=target_link)
+        button = get_inline_button_by_type(key)
         builder.row(button)
 
     await message.answer(text, reply_markup=builder.as_markup())
+
+
+def get_inline_button_by_type(key):
+    # id, url_key, url, "label"
+    link_fdb: DictRow = db.ui_links_get_by_key(key)
+    target_text = link_fdb.get('label')
+    target_link: str = link_fdb.get('url')
+    if target_link.lower().startswith('https://'):
+        return types.InlineKeyboardButton(text=target_text, url=target_link)
+    elif target_link.lower().startswith('http://'):
+        return types.InlineKeyboardButton(text=target_text, url=target_link)
+    elif target_link.lower().startswith('@'):
+        return types.InlineKeyboardButton(text=target_text, url=target_link)
+    else:
+        return types.InlineKeyboardButton(text=target_text,
+                                          callback_data=CallbackPage(action=target_link).pack())
 
 
 @router.callback_query(CallbackPage.filter(F.action == 'android'))
@@ -437,19 +444,14 @@ async def android_page_callback(call: types.CallbackQuery):
 @router.message(F.chat.type == 'private', F.text == '📱 android разработка')
 async def android_dev_page_handler(message: types.Message):
     text = '📱 android разработка\n\n'
-    text += 'Тут можно получить информацию и запросить доступы'
-    text += 'к разработкам на андроид'
+    text += 'Подробную информацию можно найти по ссылкам'
     builder = InlineKeyboardBuilder()
     builder.adjust(1)
     link_keys = ['chat_android', 'trello_android_link', 'github_android_link', 'figma_android_link',
                  'android_knowledge_base_link', 'prod_map_miro_link', 'android_access_link',
                  'swagger_link']
     for key in link_keys:
-        # id, url_key, url, "label"
-        link_fdb: DictRow = db.ui_links_get_by_key(key)
-        target_text = link_fdb.get('label')
-        target_link = link_fdb.get('url')
-        button = types.InlineKeyboardButton(text=target_text, url=target_link)
+        button = get_inline_button_by_type(key)
         builder.row(button)
     await message.answer(text, reply_markup=builder.as_markup())
 
@@ -464,4 +466,3 @@ async def swagger_page_handler(message: types.Message):
     builder.button(text=link_a.get('label'), url=link_a.get('url'))
     builder.adjust(1)
     await message.answer(text, reply_markup=builder.as_markup())
-

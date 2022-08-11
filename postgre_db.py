@@ -368,4 +368,20 @@ class Singleton(metaclass=SingletonMeta):
         else:
             return res
 
-
+    def ui_form_get_values_by_key(self, key):
+        sql = '''select uf.id, uf.key, uf.type_id, uf.sequence,
+                uf.value, uf.access
+                FROM ui_form uf
+                where uf.key = %s
+                order by uf.sequence asc;
+            '''
+        try:
+            with self.db as conn:
+                with conn.cursor(cursor_factory=DictCursor) as cursor:
+                    data = [key]
+                    cursor.execute(sql, data)
+                    res = cursor.fetchall()
+        except OperationalError:
+            log.exception(f"Ошибка запроса данных по ключу '{key}' из таблицы 'ui_form'")
+        else:
+            return res

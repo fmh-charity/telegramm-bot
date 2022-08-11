@@ -36,7 +36,7 @@ VALUES ('github_frontend_link', 'https://github.com/fmh-charity/fmh-web', '📝 
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('chat_frontend', 'https://t.me/+0', '💬 Чат разработчиков');
+VALUES ('chat_frontend', 'https://t.me/demirelkd', '💬 Доступ в чат разработчиков');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -49,7 +49,7 @@ VALUES ('frontend_system_requirements_link', 'https://pmhproject.myjetbrains.com
 
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('chat_android', 'https://t.me/+sWvr7v2Fe5A5MmY6', '💬 Чат разработчиков');
+VALUES ('chat_android', 'https://t.me/Dolgoff62', '💬 Доступ в чат разработчиков');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -74,7 +74,7 @@ VALUES ('android_knowledge_base_link', 'https://pmhproject.myjetbrains.com/youtr
 
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('chat_ios', 'https://t.me/+0', '💬 Чат разработчиков');
+VALUES ('chat_ios', 'https://t.me/omsklain', '💬 Доступ в чат разработчиков');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -100,10 +100,14 @@ step("""INSERT INTO ui_links
 (url_key, url, "label")
 VALUES ('ios_knowledge_base_link', 'https://pmhproject.myjetbrains.com/youtrack/articles/pmh-A-29/%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0', '📚 База знаний');
 """)
+step("""INSERT INTO ui_links
+(url_key, url, "label")
+VALUES ('ios_TestFlight_link', 'get_test_flight_app', '✈️ TestFlight');
+""")
 
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('chat_backend', 'https://t.me/+gcv--JjJUz85ZGJi', '💬 Чат разработчиков');
+VALUES ('chat_backend', 'https://t.me/Dimon_Donskoi', '💬 Доступ в чат разработчиков');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -132,7 +136,7 @@ VALUES ('analytics_knowledge_base', 'https://pmhproject.myjetbrains.com/youtrack
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('chat_analytics', 'https://t.me/+0', '💬 Чат аналитиков');
+VALUES ('chat_analytics', 'https://t.me/AlisaKostiukova', '💬 Доступ в чат аналитиков');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -149,7 +153,7 @@ VALUES ('github_main_link', 'https://github.com/fmh-charity/', '📝 GitHub');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
-VALUES ('test_app_credentials_request', 'login1/password1', '🔐 Запросить УЗ');
+VALUES ('test_app_credentials_request', 'get_test_cred', '🔐 Запросить УЗ');
 """)
 step("""INSERT INTO ui_links
 (url_key, url, "label")
@@ -184,3 +188,5 @@ step("""INSERT INTO ui_links
 (url_key, url, "label")
 VALUES ('about_iteco_inno_ru_01', 'https://www.iteco-inno.ru/social-projects', '📰 Сайт проекта');
 """)
+
+
