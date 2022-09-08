@@ -1,8 +1,8 @@
 # from aiogram import Router
 from aiogram.types import *
 
-from config import bot_owner_id
-from misc import bot
+from bot.config import bot_owner_id
+from bot.misc import bot
 
 import logging
 from logging.config import fileConfig

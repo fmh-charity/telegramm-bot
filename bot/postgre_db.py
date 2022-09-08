@@ -6,7 +6,7 @@ import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extras import DictCursor
 
-import config
+from bot import config
 
 fileConfig('logging.ini', disable_existing_loggers=False)
 log = logging.getLogger(__name__)

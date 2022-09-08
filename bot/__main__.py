@@ -6,11 +6,10 @@ from aiogram import Dispatcher
 from yoyo import read_migrations, get_backend
 from yoyo.backends import DatabaseBackend
 
-import admin_handlers
-import h_bot
-import h_handler
-from config import pg_db_user, pg_db_host, pg_db_database, pg_db_password, pg_db_schema
-from misc import bot
+
+from bot import admin_handlers, h_bot, h_handler
+from bot.config import pg_db_user, pg_db_host, pg_db_database, pg_db_password, pg_db_schema
+from bot.misc import bot
 
 
 fileConfig('logging.ini', disable_existing_loggers=False)

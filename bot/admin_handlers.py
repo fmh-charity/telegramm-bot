@@ -8,9 +8,9 @@ from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from psycopg2.extras import DictRow
 
-import postgre_db
-from h_cb_data import CallbackAdminSetLink, CallbackAdminSetForm
-from h_fsm import EditLink, CreateLink
+from bot import postgre_db
+from bot.h_cb_data import CallbackAdminSetLink, CallbackAdminSetForm
+from bot.h_fsm import EditLink, CreateLink
 
 fileConfig('logging.ini', disable_existing_loggers=False)
 log = logging.getLogger(__name__)

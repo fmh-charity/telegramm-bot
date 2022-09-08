@@ -6,8 +6,8 @@ from aiogram.dispatcher.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 from psycopg2.extras import DictRow
 
-import postgre_db
-from h_cb_data import CallbackPage
+from bot import postgre_db
+from bot.h_cb_data import CallbackPage
 
 fileConfig('logging.ini', disable_existing_loggers=False)
 log = logging.getLogger(__name__)
@@ -200,7 +200,7 @@ async def about_page_handler(message: types.Message):
     builder.button(text='ℹ️Узнать о приложении больше')
     builder.button(text='👨‍👨‍👦‍👦 О команде')
     builder.button(text='🗽 Об Open Source')
-    builder.button(text='🛠 Техническая составляющая')
+    builder.button(text='🛠 Технические детали')
     builder.button(text='🏚 На главную')
     builder.adjust(2)
     await message.answer(text, reply_markup=builder.as_markup(resize_keyboard=True))
@@ -231,16 +231,15 @@ async def about_opensource_handler(message: types.Message):
     await message.answer(text)
 
 
-@router.message(F.chat.type == 'private', F.text == '🛠 Техническая составляющая')
+@router.message(F.chat.type == 'private', F.text == '🛠 Технические детали')
 async def about_tech_component_handler(message: types.Message):
-    text = '''🛠 Техническая составляющая
+    text = '''🛠 Технические детали
 
 Наше приложение кроссплатформенное, предусмотрена веб и мобильная версия. 
-Веб-версия создана на React, мобильное приложение (Android) - на Kotlin. 
-Все проекты размещены в открытом доступе на Github.
+Веб-версия создана на React, мобильное приложение (Android) - на Kotlin. Все проекты размещены в открытом доступе на Github.
 Для работы backend мы используем стек: spring boot, java 11, hibernate, postgresql, docker. 
-Сервисы разворачиваются на сервере через docker compose с использованием CI/CD на Github, 
-а каждый pull request обязательно тестируется.
+Библиотеки, инструменты и языки: React, React Router, Redux, Redux Toolkit, Redux Toolkit Query, Eslint, Prettier, Typescript, Jest, React Testing Library, Less, Webpack
+Сервисы разворачиваются на сервере через docker compose с использованием CI/CD на Github, а каждый pull request обязательно тестируется.
 '''
     await message.answer(text)
 
