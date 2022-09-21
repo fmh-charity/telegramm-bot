@@ -1,7 +1,8 @@
 version: "3.9"
 services:
   bot:
-    image: isaroot/it_vzabote_bot:1.0.0
+    image: ghcr.io/fmh-charity/it_vzabote_bot:1.0.0
+#    image: isaroot/it_vzabote_bot:1.0.0
     stop_signal: SIGINT
     restart: always
     environment:
