@@ -20,6 +20,6 @@ WORKDIR /app
 COPY logging.ini /app/logging.ini
 COPY yoyo.ini /app/yoyo.ini
 COPY bot /app/bot
+COPY migrations /app/migrations
 RUN mkdir -p /app/logs
 CMD ["python", "-m", "bot"]
-#CMD ["python", "-m", "main"]

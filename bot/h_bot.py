@@ -1,7 +1,6 @@
 # from aiogram import Router
 from aiogram.types import *
 
-from bot.config import bot_owner_id
 from bot.misc import bot
 
 import logging
@@ -21,13 +20,7 @@ async def set_commands():
     ]
     log.info(f'Установлен список команд BotCommandScopeDefault()')
     await bot.set_my_commands(commands, BotCommandScopeDefault())
-    # log.info(f'Установлен список команд BotCommandScopeChat(chat_id={bot_owner_id})')
-    # await bot.set_my_commands(commands, BotCommandScopeChat(chat_id=bot_owner_id))
 
-
-async def send_msg2owner(msg):
-    await bot.send_message(chat_id=bot_owner_id, text=msg)
-    print()
 
 
 
