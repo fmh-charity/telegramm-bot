@@ -17,9 +17,10 @@ FROM python:3.9-slim-bullseye
 COPY --from=compile-image /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
-COPY logging.ini /app/logging.ini
-COPY yoyo.ini /app/yoyo.ini
-COPY bot /app/bot
-COPY migrations /app/migrations
+#COPY logging.ini /app/logging.ini
+#COPY yoyo.ini /app/yoyo.ini
+#COPY bot /app/bot
+#COPY migrations /app/migrations
+COPY . /app
 RUN mkdir -p /app/logs
 CMD ["python", "-m", "bot"]
