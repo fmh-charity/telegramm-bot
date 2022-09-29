@@ -11,7 +11,7 @@ env:
   CERTIFICATE_PATH: /certs
   CERTIFICATE_LOCAL_PATH: certificates
   DOCKER_COMPOSE_FILE: docker-compose.yml
-  DOCKER_COMPOSE_DIRECTORY: /usr/src/docker/
+  DOCKER_COMPOSE_DIRECTORY: /usr/src/tg_bot/
   NGINX_CONF_FILE: main.conf
   NGINX_CONF_REMOTE_FILE: main.conf
   NGINX_CONF_DIRECTORY: /nginx/
@@ -49,4 +49,4 @@ jobs:
         port: ${{ secrets.REMOTE_PORT }}
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SSH_KEY }}
-        script: 'cd /usr/src/docker && docker-compose stop && yes | docker-compose pull && docker-compose up -d'
+        script: 'cd /usr/src/tg_bot && docker-compose stop && yes | docker-compose pull && docker-compose up -d'
